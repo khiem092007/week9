@@ -25,6 +25,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
+          cache: maven
 
 #      - name: Chay Maven trong folder bai05
 #        run: mvn clean package

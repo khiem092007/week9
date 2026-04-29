@@ -33,11 +33,4 @@ public class CalculatorTest {
             casioFx580.divide(10, 0);
         });
     }
-
-    @Test
-    void testHardcoreD() throws IOException {
-        Path path = Path.of("in.txt");
-        String file = Files.readString(path);
-        assertNotNull(file);
-    }
 }

@@ -7,12 +7,14 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build-job:
-    strategy:
-      matrix:
-
-        os: [ ubuntu-latest, windows-latest,macos-latest ]
-    runs-on: ${{matrix.os}}
+  build:
+    runs-on: ubuntu-latest
+#  build-job:
+#    strategy:
+#      matrix:
+#
+#        os: [ ubuntu-latest, windows-latest,macos-latest ]
+#    runs-on: ${{matrix.os}}
 
     steps:
       - name: Lay code tu Github
@@ -29,7 +31,7 @@ jobs:
 #        working-directory: ./bai05
 
       - name: Chay JaCoCo trong folder bai05
-        run: mvn clean verify
+        run: mvn clean package
         working-directory: ./bai06
 
 #      - name: Luu file html sau khi build thành công

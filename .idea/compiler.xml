@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="bai06" />
         <module name="maven-lab-02 (1)" />
         <module name="bai04" />
         <module name="maven-lab-01" />

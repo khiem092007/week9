@@ -23,7 +23,6 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-          cache: maven
 
 #      - name: Chay Maven trong folder bai05
 #        run: mvn clean package
@@ -31,10 +30,10 @@ jobs:
 
       - name: Chay JaCoCo trong folder bai05
         run: mvn clean verify
-        working-directory: ./bai05
+        working-directory: ./bai06
 
-      - name: Luu file html sau khi build thành công
-        uses: actions/upload-artifact@v4
-        with:
-          name: jacoco-report
-          path: bai05/target/site/jacoco/
+#      - name: Luu file html sau khi build thành công
+#        uses: actions/upload-artifact@v4
+#        with:
+#          name: jacoco-report
+#          path: bai05/target/site/jacoco/

@@ -1,0 +1,12 @@
+2026-04-30 05:01:31 [main] ERROR bai.Calculator - Lỗi chia cho 0 với tử số: 10.0
+2026-04-30 05:01:31 [main] INFO  bai.Calculator - Thực hiện phép cộng: 10.0 + 0.0
+2026-04-30 05:01:31 [main] INFO  bai.Calculator - Thực hiện phép chia: 10.0 / 1.0
+2026-04-30 05:01:57 [main] ERROR bai.Calculator - Lỗi chia cho 0 với tử số: 10.0
+2026-04-30 05:01:57 [main] INFO  bai.Calculator - Thực hiện phép cộng: 10.0 + 0.0
+2026-04-30 05:01:57 [main] INFO  bai.Calculator - Thực hiện phép chia: 10.0 / 1.0
+2026-04-30 05:02:14 [main] INFO  bai.Calculator - Thực hiện phép cộng: 10.0 + 0.0
+2026-04-30 05:02:20 [main] INFO  bai.Calculator - Thực hiện phép cộng: 10.0 + 0.0
+2026-04-30 05:02:31 [main] INFO  bai.Calculator - Thực hiện phép cộng: 10.0 + 0.0
+2026-04-30 05:02:45 [main] ERROR bai.Calculator - Lỗi chia cho 0 với tử số: 10.0
+2026-04-30 05:02:45 [main] INFO  bai.Calculator - Thực hiện phép cộng: 10.0 + 0.0
+2026-04-30 05:02:45 [main] INFO  bai.Calculator - Thực hiện phép chia: 10.0 / 1.0

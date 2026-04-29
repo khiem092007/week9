@@ -31,7 +31,7 @@ jobs:
 #        run: mvn clean package
 #        working-directory: ./bai05
 
-      - name: Chay JaCoCo trong folder bai05
+      - name: Chay Maven trong folder bai06
         run: mvn clean package
         working-directory: ./bai06
 

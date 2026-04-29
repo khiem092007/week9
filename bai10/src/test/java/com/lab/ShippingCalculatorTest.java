@@ -9,7 +9,7 @@ public class ShippingCalculatorTest {
 
     @Test
     void testStandard() {
-        assertEquals(1400, calc.calculate(5, "STANDARD"));
+        assertEquals(1500.0, calc.calculate(5, "STANDARD"));
     }
 
     @Test

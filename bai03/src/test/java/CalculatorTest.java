@@ -19,7 +19,7 @@ public class CalculatorTest {
     @Test
     void testPlus(){
         double result=casioFx580.divide(10,1);
-        assertEquals(10, result);
+        assertEquals(11, result);
     }
 
     @Test

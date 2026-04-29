@@ -3,6 +3,9 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -32,9 +35,9 @@ public class CalculatorTest {
     }
 
     @Test
-    void testHardcoreD(){
-        String path= "C:\\Users\\Admin\\Desktop\\Week9\\in.txt";
-        File file =new File(path);
-        assertTrue(file.exists());
+    void testHardcoreD() throws IOException {
+        Path path = Path.of("in.txt");
+        String file = Files.readString(path);
+        assertNotNull(file);
     }
 }

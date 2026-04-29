@@ -10,16 +10,19 @@
         <list>
           <option value="maven-lab-02" />
           <option value="calculator-app" />
+          <option value="calculator-app (1)" />
         </list>
       </option>
       <option name="ignoredPackages">
         <list>
           <option value="ch.qos.logback:logback-core:1.5.13" />
           <option value="ch.qos.logback:logback-core:1.5.13" />
+          <option value="ch.qos.logback:logback-core:1.4.11" />
         </list>
       </option>
       <option name="ignoredReasons">
         <list>
+          <option value="Not exploitable" />
           <option value="Not exploitable" />
           <option value="Not exploitable" />
         </list>

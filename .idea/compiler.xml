@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="maven-lab-02" />
+        <module name="calculator-app (1)" />
         <module name="maven-lab-01" />
         <module name="maven-lab-02 (1)" />
         <module name="calculator-app" />
+        <module name="calculator-app (2)" />
       </profile>
     </annotationProcessing>
   </component>

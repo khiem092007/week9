@@ -6,13 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="maven-lab-02" />
-        <module name="calculator-app (1)" />
-        <module name="maven-lab-01" />
         <module name="maven-lab-02 (1)" />
+        <module name="bai04" />
+        <module name="maven-lab-01" />
+        <module name="bai05" />
         <module name="calculator-app" />
+        <module name="bai02" />
         <module name="calculator-app (2)" />
+        <module name="bai03" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="calculator-app (1)" target="11" />
+      <module name="calculator-app (2)" target="11" />
+      <module name="maven-lab-02" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

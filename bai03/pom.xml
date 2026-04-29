@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.practice.maven</groupId>
-    <artifactId>calculator-app</artifactId>
+    <artifactId>bai03</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

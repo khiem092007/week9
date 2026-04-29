@@ -25,12 +25,16 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Chay Maven trong folder bai04
-        run: mvn clean package
-        working-directory: ./bai04
+#      - name: Chay Maven trong folder bai05
+#        run: mvn clean package
+#        working-directory: ./bai05
+
+      - name: Chay JaCoCo trong folder bai05
+        run: mvn clean verify
+        working-directory: ./bai05
 
       - name: Luu file JAR sau khi build thành công
         uses: actions/upload-artifact@v4
         with:
-          name: calculator-app-jar
-          path: bai04/target/*.jar
+          name: jacoco-report
+          path: bai05/target/*.jar

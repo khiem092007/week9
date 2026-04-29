@@ -6,9 +6,11 @@
       <list>
         <option value="$PROJECT_DIR$/bai01/src/bai01/pom.xml" />
         <option value="$PROJECT_DIR$/bai02/src/bai02/pom.xml" />
+        <option value="$PROJECT_DIR$/bai04/pom.xml" />
         <option value="$PROJECT_DIR$/bai02/pom.xml" />
         <option value="$PROJECT_DIR$/bai03/pom.xml" />
-        <option value="$PROJECT_DIR$/bai04/pom.xml" />
+        <option value="$PROJECT_DIR$/bai01/pom.xml" />
+        <option value="$PROJECT_DIR$/bai05/pom.xml" />
       </list>
     </option>
   </component>

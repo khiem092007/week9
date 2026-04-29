@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.practice.maven</groupId>
-    <artifactId>maven-lab-02</artifactId>
+    <artifactId>bai02</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

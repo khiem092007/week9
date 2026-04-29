@@ -1,4 +1,4 @@
-name: CI Bai 03
+name: Cac bai ve CI
 
 on:
   push:
@@ -8,7 +8,12 @@ on:
 
 jobs:
   build-job:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+
+        os: [ ubuntu-latest, windows-latest,macos-latest ]
+    runs-on: ${{matrix.os}}
+
     steps:
       - name: Lay code tu Github
         uses: actions/checkout@v4
@@ -20,12 +25,12 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Chay Maven trong folder bai03
+      - name: Chay Maven trong folder bai04
         run: mvn clean package
-        working-directory: ./bai03
+        working-directory: ./bai04
 
       - name: Luu file JAR sau khi build thành công
         uses: actions/upload-artifact@v4
         with:
           name: calculator-app-jar
-          path: bai03/target/*.jar
+          path: bai04/target/*.jar

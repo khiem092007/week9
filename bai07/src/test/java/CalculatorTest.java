@@ -13,7 +13,7 @@ public class CalculatorTest {
     @Test
     void testAdd(){
         double result=casioFx580.plus(10,0);
-        assertEquals(10, result);
+        assertEquals(11, result);
     }
 
     @Test

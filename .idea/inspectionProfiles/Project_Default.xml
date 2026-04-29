@@ -13,6 +13,7 @@
           <option value="calculator-app (1)" />
           <option value="maven-lab-01" />
           <option value="maven-lab-01" />
+          <option value="bai08" />
         </list>
       </option>
       <option name="ignoredPackages">
@@ -22,10 +23,12 @@
           <option value="ch.qos.logback:logback-core:1.4.11" />
           <option value="ch.qos.logback:logback-core:1.4.11" />
           <option value="com.fasterxml.jackson.core:jackson-core:2.5.0" />
+          <option value="ch.qos.logback:logback-core:1.5.13" />
         </list>
       </option>
       <option name="ignoredReasons">
         <list>
+          <option value="Not exploitable" />
           <option value="Not exploitable" />
           <option value="Not exploitable" />
           <option value="Not exploitable" />

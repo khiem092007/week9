@@ -1,20 +1,19 @@
-name: Cac bai ve CI
-
+name: Automated Code Review and Testing
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: read
+  pull-requests: write
+  checks: write
+
 jobs:
-  build:
+  review-and-test-job:
+    name: "CI Check: Logic and Style"
     runs-on: ubuntu-latest
-#  build-job:
-#    strategy:
-#      matrix:
-#
-#        os: [ ubuntu-latest, windows-latest,macos-latest ]
-#    runs-on: ${{matrix.os}}
 
     steps:
       - name: Lay code tu Github
@@ -27,16 +26,19 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-#      - name: Chay Maven trong folder bai05
-#        run: mvn clean package
-#        working-directory: ./bai05
+      - name: Run Checkstyle
+        id: checkstyle
+        run: mvn clean checkstyle:checkstyle
+        working-directory: ./bai07
 
-      - name: Chay Maven trong folder bai06
-        run: mvn clean package
-        working-directory: ./bai06
+      - name: Checkstyle Inline Feedback
+        uses: dbelyaev/action-checkstyle@master
+        if: always() # Chạy bước này kể cả khi Checkstyle fail để còn có comment mà chụp ảnh
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          checkstyle_config: google_checks.xml
+          level: warning
 
-#      - name: Luu file html sau khi build thành công
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: jacoco-report
-#          path: bai05/target/site/jacoco/
+      - name: Final Verification (Logic Test)
+        run: mvn clean verify
+        working-directory: ./bai07

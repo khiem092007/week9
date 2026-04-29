@@ -11,12 +11,13 @@
         <module name="bai06" />
         <module name="bai07" />
         <module name="maven-lab-02 (1)" />
-        <module name="bai04" />
+        <module name="shipping-app" />
         <module name="maven-lab-01" />
+        <module name="calculator-app (2)" />
+        <module name="bai04" />
         <module name="bai05" />
         <module name="calculator-app" />
         <module name="bai02" />
-        <module name="calculator-app (2)" />
         <module name="bai03" />
       </profile>
     </annotationProcessing>

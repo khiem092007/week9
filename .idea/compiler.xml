@@ -11,9 +11,9 @@
         <module name="bai06" />
         <module name="bai07" />
         <module name="maven-lab-02 (1)" />
-        <module name="shipping-app" />
         <module name="maven-lab-01" />
         <module name="calculator-app (2)" />
+        <module name="bai10" />
         <module name="bai04" />
         <module name="bai05" />
         <module name="calculator-app" />
@@ -27,6 +27,7 @@
       <module name="calculator-app (1)" target="11" />
       <module name="calculator-app (2)" target="11" />
       <module name="maven-lab-02" target="11" />
+      <module name="shipping-app" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,7 +1,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.lab</groupId>
-    <artifactId>shipping-app</artifactId>
+    <artifactId>bai10</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
